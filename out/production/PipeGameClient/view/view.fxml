@@ -12,38 +12,41 @@
 
 <?import view.PipeGameDisplayer?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="view.Controller">
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
-   <children>
-      <BorderPane prefHeight="200.0" prefWidth="200.0">
+<GridPane alignment="center"  hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="view.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+       <BorderPane prefHeight="200.0" prefWidth="200.0">
          <top>
             <MenuBar BorderPane.alignment="CENTER">
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
+                      <MenuItem mnemonicParsing="false" text="Open" onAction="#openFile" />
+                      <MenuItem mnemonicParsing="false" text="Close" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
+                <Menu mnemonicParsing="false" text="View">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
+                      <MenuItem mnemonicParsing="false" onAction="#theme" text="Black and White theme" />
+                      <MenuItem mnemonicParsing="false" onAction="#theme" text="Yellow and White theme" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem mnemonicParsing="false" onAction="#aboutPage" text="About" />
                   </items>
                 </Menu>
               </menus>
             </MenuBar>
          </top>
          <center>
-            <PipeGameDisplayer fx:id="pipeGame" height="278.0" width="334.0" BorderPane.alignment="CENTER" wallFileName="./resources/wallpaper.jpg" L="./resources/L.jpeg"/>
+             <PipeGameDisplayer fx:id="pipeGame" height="450.0" width="500.0" BorderPane.alignment="CENTER" wallFileName="./resources/wallpaper.jpg"/>
+             <!-- <PipeGameDisplayer fx:id="pipeGame" height="450.0" width="500.0" BorderPane.alignment="CENTER"  wallFileName="./resources/wallpaper.jpg"  l="./resources/theme2/L.png"  f="./resources/theme2/F.png"  j="./resources/theme2/J.png" Seven="./resources/theme2/7.png" Horizontal="./resources/theme2/pipeline.png" Vertical="./resources/theme2/minus.png" start="./resources/theme2/start.png" finish="./resources/theme2/finish.png"/>-->
          </center>
       </BorderPane>
    </children>
