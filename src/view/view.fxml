@@ -35,7 +35,7 @@
                 <Menu mnemonicParsing="false" text="File">
                   <items>
                       <MenuItem mnemonicParsing="false" text="Open" onAction="#openFile" />
-                      <MenuItem mnemonicParsing="false" text="Close" />
+                      <MenuItem mnemonicParsing="false" text="Save" onAction="#saveToFile"/>
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="View">

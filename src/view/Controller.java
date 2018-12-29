@@ -14,6 +14,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.net.URL;
@@ -167,5 +168,25 @@ public class Controller implements Initializable
         timer.start();
     }
 
+
+    public void saveToFile() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("./resources"));
+        File file = fileChooser.showSaveDialog(null);
+
+        try {
+            PrintWriter write = new PrintWriter(file);
+            for(int i =0;i<PipeGameBoard.size();i++){
+                write.println(PipeGameBoard.get(i));
+
+            }
+            write.flush();
+            write.close();
+        } catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+
+
+    }
 
 }
