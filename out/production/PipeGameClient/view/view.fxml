@@ -12,7 +12,15 @@
 
 <?import view.PipeGameDisplayer?>
 
-<GridPane alignment="center"  hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="view.Controller">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="view.Controller">
     <columnConstraints>
         <ColumnConstraints />
     </columnConstraints>
@@ -48,6 +56,28 @@
              <PipeGameDisplayer fx:id="pipeGame" height="450.0" width="500.0" BorderPane.alignment="CENTER" wallFileName="./resources/wallpaper.jpg"/>
              <!-- <PipeGameDisplayer fx:id="pipeGame" height="450.0" width="500.0" BorderPane.alignment="CENTER"  wallFileName="./resources/wallpaper.jpg"  l="./resources/theme2/L.png"  f="./resources/theme2/F.png"  j="./resources/theme2/J.png" Seven="./resources/theme2/7.png" Horizontal="./resources/theme2/pipeline.png" Vertical="./resources/theme2/minus.png" start="./resources/theme2/start.png" finish="./resources/theme2/finish.png"/>-->
          </center>
+           <bottom>
+
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                   <children>
+                       <VBox prefHeight="200.0" prefWidth="200.0" alignment="CENTER_LEFT">
+                           <children>
+                               <Label fx:id="time"  text="Time:" prefWidth="200.0"  >
+                                   <font>
+                                       <Font size="20.0" />
+                                   </font>
+                               </Label>
+                               <Label fx:id="madeMoves"  text="Moves:" prefWidth="200.0"  >
+                                   <font>
+                                       <Font size="20.0" />
+                                   </font>
+                               </Label>
+                           </children>
+                       </VBox>
+                       <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Check" onAction="#Win"/>
+                   </children>
+               </HBox>
+           </bottom>
       </BorderPane>
    </children>
 </GridPane>

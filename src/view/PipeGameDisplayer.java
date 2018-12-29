@@ -322,12 +322,7 @@ public class PipeGameDisplayer extends Canvas
                     PipeGameBoard.set(x, fix);
                     break;
                 }
-                /*case 'g': {
-                    flag = 1;
-                }
-                case 's': {
-                    flag = 1;
-                }*/
+
             }
             this.reDraw();
     }
@@ -343,5 +338,7 @@ public class PipeGameDisplayer extends Canvas
         this.themeName = theme;
         reDraw();
     }
+
+
 
 }

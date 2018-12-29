@@ -1,26 +1,34 @@
 package view;
 
+import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+
+import static com.sun.corba.se.impl.util.Utility.printStackTrace;
 
 
 public class Controller implements Initializable
 {
     Controller controller;
     public String end = "";
+    public int moves=0;
     public ArrayList<String> PipeGameBoard = new ArrayList<String>();
     private PlaySound sound;
 
@@ -32,7 +40,29 @@ public class Controller implements Initializable
         popWindow("About");
     }
 
+    @FXML
+    void Win(ActionEvent event)  //Should work after server connection
+    {
+        if(moves==0)
+            popWindow("fail");
+        else
+            popWindow("Win");
+    }
 
+    @FXML
+    void Fail(ActionEvent event)  //Should work after server connection
+    {
+        popWindow("fail");
+    }
+    @FXML
+    Label time;
+
+    @FXML
+    Label madeMoves;
+
+
+    @FXML
+    private ImageView image;
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
@@ -44,13 +74,8 @@ public class Controller implements Initializable
             int x = (int)((long)e.getY()*(long)pipeGame.getPipeGameBoard().size()/(long)pipeGame.getHeight());
             int y = (int) ((e.getX() * pipeGame.getPipeGameBoard().get(0).length()) / pipeGame.getWidth());
             pipeGame.switchCell(x,y);
-            //points++;
-            /*if(mazeDisplayer.flag==1)
-            {
-                points--;
-            }*/
-            //mazeDisplayer.flag=0;
-            //this.score.setText("Moves: " + points);
+            moves++;
+            this.madeMoves.setText("Moves: " + moves);
 
         });
     }
@@ -71,6 +96,7 @@ public class Controller implements Initializable
             System.out.println("Error: File not found!");
 
         }
+        timer();
 
     }
 
@@ -120,6 +146,25 @@ public class Controller implements Initializable
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
+    }
+
+    public void timer() {
+        long start = System.currentTimeMillis();
+        Label timeLabel = this.time;
+
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long now) {
+                long n = System.currentTimeMillis();
+                long millis = ((n - start));
+
+                String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
+                        TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
+                        TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+                timeLabel.setText("Time: " + hms);
+            }
+        };
+        timer.start();
     }
 
 
