@@ -3,7 +3,7 @@ package Controller;
 import model.ClientServerHandler;
 import model.ClientServerHandler;
 import view.Controller;
-import view.fxml_files.*;
+//import view.fxml_files.*;
 import view.PipeGameDisplayer;
 
 import java.io.IOException;
@@ -18,52 +18,31 @@ public class MyController implements Observer {
         this.serverhandler = serverhandler;
         this.view = view;
         serverhandler.addObserver(this);
+        view.addObserver(this);
         
     }
 
     @Override
-    public void update(Observable o, Object arg) {
-    	System.out.println("imin update");
-        if(o == serverhandler){
+    public void update(Observable observer, Object arg) {
+        if(observer == serverhandler){
             if(arg instanceof String){
-                if(arg.equals("Connect")){
+                if(arg.equals("Connect"))
+                {
                     view.notifyObservers();
-                }else if(arg.equals("update")) {
-                    view.setConnect("We connected");
-                }else if(arg.equals("Error")){
-                    view.setConnect("disconnected");
                 }
             }
 
-        }else if(o == view){
-            // send level sol request to serverhandlers
+        }else if(observer == view){
             if(arg instanceof String){
                 if(((String)arg).equals("Connect")){
                     try {
-                        serverhandler.connectToServer(view.getIp(),Integer.parseInt(view.getPort()));
-
+                        serverhandler.connectToServer("127.0.0.1",6400);
 
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
-                else if(((String)arg).equals("Solve")){
 
-                        PipeGameDisplayer board = view.getMazeDisplayer();
-                    try {
-                        serverhandler.Solver(board);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                }else if(arg.equals("check")){
-                    try {
-                        boolean checkMaze = serverhandler.PipeTestSolution(view.getMazeDisplayer());
-                        view.getFromModel(checkMaze);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
             }
         }
     }
