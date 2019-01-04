@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
@@ -18,28 +19,38 @@ import java.awt.*;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Observable;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
-import static com.sun.corba.se.impl.util.Utility.printStackTrace;
+//import static com.sun.corba.se.impl.util.Utility.printStackTrace;
 
 
-public class Controller implements Initializable
+public class Controller extends Observable implements Initializable
 {
     Controller controller;
     public String end = "";
     public int moves=0;
     public ArrayList<String> PipeGameBoard = new ArrayList<String>();
-    private PlaySound sound;
-
+  //  private PlaySound sound;
+    private String connection = "disconnected";
     @FXML
     PipeGameDisplayer pipeGame ;
 
+    public boolean checkMaze = false;
+    
+    
     @FXML
     void aboutPage(ActionEvent event){
         popWindow("About");
     }
 
+    @FXML
+    void Try(ActionEvent event)  //Should work after server connection
+    {
+        popWindow("fail");
+    }
+    
     @FXML
     void Win(ActionEvent event)  //Should work after server connection
     {
@@ -60,7 +71,20 @@ public class Controller implements Initializable
     @FXML
     Label madeMoves;
 
+    @FXML
+    Label _connect;
 
+    @FXML
+    PipeGameDisplayer PipeDisplayer;
+    
+    @FXML
+    TextField _ip;
+
+    @FXML
+    TextField _port;
+
+    
+    
     @FXML
     private ImageView image;
 
@@ -68,7 +92,7 @@ public class Controller implements Initializable
     public void initialize(URL location, ResourceBundle resources)
     {
         pipeGame.setPipeGameBoard(PipeGameBoard);
-        sound = new PlaySound();
+       // sound = new PlaySound();
         pipeGame.addEventFilter(MouseEvent.MOUSE_CLICKED,(e)->{
             pipeGame.requestFocus();
             int x = (int)((long)e.getY()*(long)pipeGame.getPipeGameBoard().size()/(long)pipeGame.getHeight());
@@ -80,6 +104,45 @@ public class Controller implements Initializable
         });
     }
 
+    public void setConnect(String connect) {
+        this.connection = connect;
+        UpdateConnection();
+    }
+    
+    void UpdateConnection() {
+        this._connect.setText(String.format("Connection Status: %s", connection));
+    }
+
+    public PipeGameDisplayer getMazeDisplayer() {
+        return PipeDisplayer;
+    }
+
+    public void connect() {
+        setChanged();
+        notifyObservers("Connect");
+        System.out.println("im in connect");
+    }
+    
+    public void solveGame(){
+        System.out.println(_connect.getText());
+        if(_connect.getText().equals("Connection Status: We connected")){
+            setChanged();
+            notifyObservers("Solve");
+        }
+    }
+    
+    public String getIp() {
+        return _ip.getText();
+    }
+
+    public void getFromModel(boolean check){
+        this.checkMaze = check;
+    }
+    
+    public String getPort() {
+        return _port.getText();
+    }
+    
     public void openFile() throws IOException {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("./resources"));

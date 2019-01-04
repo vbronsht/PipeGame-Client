@@ -75,6 +75,8 @@
                            </children>
                        </VBox>
                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Check" onAction="#Win"/>
+                       <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Solve" onAction="#solveGame"/>
+                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Connect" onAction="#connect"/>
                    </children>
                </HBox>
            </bottom>

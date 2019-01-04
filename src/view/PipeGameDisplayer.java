@@ -21,6 +21,7 @@ public class PipeGameDisplayer extends Canvas
     private String themeName ="theme1";
     private Controller temp;
     private ArrayList<String> PipeGameBoard;
+    
 
     public ArrayList<String> getPipeGameBoard() {
         return PipeGameBoard;
@@ -147,7 +148,8 @@ public class PipeGameDisplayer extends Canvas
     }
 
 
-    public void setPipeData() {
+    public void setPipeData(ArrayList<String> Data) {
+        PipeGameBoard = Data;
         reDraw();
     }
 
