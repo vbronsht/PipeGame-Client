@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ad53336-b947-4425-afaa-28e0a0f88acf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/view/fxml_files/Timer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/fxml_files/Win.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/fxml_files/test.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PipeGameClient.iws" beforeDir="false" afterPath="$PROJECT_DIR$/PipeGameClient.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PipeGameClient/view/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PipeGameClient/view/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PipeGameClient/view/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PipeGameClient/view/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PipeGameClient/view/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PipeGameClient/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PipeGameClient/view/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PipeGameClient/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PipeGameClient/view/view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/PipeGameDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/PipeGameDisplayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/view.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,20 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/PipeGameDisplayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
+            <state relative-caret-position="3168">
               <caret line="324" selection-start-line="324" selection-end-line="324" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/PlaySound.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/src/view/view.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            <state relative-caret-position="284">
+              <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -66,20 +58,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="180" column="13" lean-forward="true" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/javafx/event/EventHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -95,10 +78,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PipeGameClient.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+            <state relative-caret-position="204">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,6 +100,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/javafx/event/Event.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="8411" selection-start-line="8411" selection-end-line="8411" />
             </state>
           </provider>
         </entry>
@@ -138,9 +144,9 @@
         <option value="$PROJECT_DIR$/src/view/fxml_files/test.fxml" />
         <option value="$PROJECT_DIR$/src/view/fxml_files/Win.fxml" />
         <option value="$PROJECT_DIR$/src/view/PipeGameDisplayer.java" />
-        <option value="$PROJECT_DIR$/src/view/fxml_files/fail.fxml" />
-        <option value="$PROJECT_DIR$/src/view/Main.java" />
         <option value="$PROJECT_DIR$/src/view/view.fxml" />
+        <option value="$PROJECT_DIR$/src/view/Main.java" />
+        <option value="$PROJECT_DIR$/src/view/fxml_files/fail.fxml" />
         <option value="$PROJECT_DIR$/src/view/Controller.java" />
       </list>
     </option>
@@ -162,11 +168,6 @@
             <path>
               <item name="PipeGameClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="PipeGameClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PipeGameClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PipeGameClient" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PipeGameClient" type="b2602c69:ProjectViewProjectNode" />
@@ -197,7 +198,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546127051406" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546124695362" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -252,18 +253,18 @@
       <workItem from="1545471489194" duration="23482000" />
       <workItem from="1545818702558" duration="311000" />
       <workItem from="1545821301292" duration="9646000" />
-      <workItem from="1546118878295" duration="7789000" />
+      <workItem from="1546118878295" duration="5572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42443000" />
+    <option name="totallyTimeSpent" value="40226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19456366" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19456366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -272,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3173484" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3173484" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3977433" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,7 +309,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/view/Controller.java</url>
-          <line>142</line>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/view/Controller.java</url>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
@@ -324,6 +331,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -343,6 +357,16 @@
           <caret line="153" selection-start-line="153" selection-end-line="153" />
           <folding>
             <element signature="e#3842#3843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/PlaySound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -426,11 +450,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/PipeGameDisplayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="324" selection-start-line="324" selection-end-line="324" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/fxml_files/test.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="25" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/view.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -450,58 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/PipeGameDisplayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="324" selection-start-line="324" selection-end-line="324" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/PlaySound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/view.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/javafx-src.zip!/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="180" column="13" lean-forward="true" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

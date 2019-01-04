@@ -35,7 +35,7 @@
                 <Menu mnemonicParsing="false" text="File">
                   <items>
                       <MenuItem mnemonicParsing="false" text="Open" onAction="#openFile" />
-                      <MenuItem mnemonicParsing="false" text="Save" onAction="#saveToFile"/>
+                      <MenuItem mnemonicParsing="false" text="Close" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="View">
@@ -75,6 +75,8 @@
                            </children>
                        </VBox>
                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Check" onAction="#Win"/>
+                       <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Solve" onAction="#solveGame"/>
+                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Connect" onAction="#connect"/>
                    </children>
                </HBox>
            </bottom>
